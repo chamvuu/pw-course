@@ -1,0 +1,13 @@
+1. git init
+dùng để khởi tạo một repo local, khi đó sẽ tạo ra 3 vùng nhớ: working directory, staging, repository.
+mặc định các files sẽ ở vùng working directory.
+
+2. git add <file_name>
+dùng để add file vào vùng nhớ tạm staging
+
+3. git add .
+dùng để add tất cả các file từ vùng working directory sang vùng nhớ staging
+
+4. git commit -m"message"
+dùng để đẩy các file sang vùng repository kèm theo message để dễ quản lý.
+

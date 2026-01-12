@@ -1,0 +1,32 @@
+Trong một folder mới được tạo ra, mình thực hiện lần lượt các lệnh sau. Hãy liệt kê các
+file theo từng vùng sau khi thao tác một loạt các lệnh sau:
+a. Tạo 3 file: file1, file2, file3
+b. Chạy lệnh: git init
+c. Chạy lệnh: git commit -m”init project”
+d. Chạy lệnh: git add file1
+e. Chạy lệnh: git commit -m”add file1”
+f. Chạy lệnh: git commit -m”add file”
+
+----------------------------------
+
+b. Chạy lệnh: git init thì khởi tạo repo local
+Mặc định cả 3 files sẽ vào vùng nháp working directory
+
+c. Chạy lệnh: git commit -m”init project”
+Cả 3 files vẫn đang ở vùng nháp vì chưa có lệnh add file nào vào vùng staging.
+
+d. Chạy lệnh: git add file1
+file1: chuyển sang vùng nhớ tạm staging
+file2, file3: vẫn ở vùng working directory
+
+e. Chạy lệnh: git commit -m”add file1”
+file1: được di chuyển sang vùng repository
+filefile2, file3: vẫn ở vùng working directory
+
+f. Chạy lệnh: git commit -m”add file”
+do không có file nào được thêm vào vùng staging, nên khi thực hiện lệnh commit trên các file không thay
+đổi vùng hiện tại.
+file1: vùng repository
+filefile2, file3: vùng working directory
+
+
