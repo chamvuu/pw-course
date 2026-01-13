@@ -11,9 +11,10 @@ b. In ra cân nặng lý tưởng, cân nặng tối đa, cân nặng tối thi�
 /*----------------------------------------------  */                                
 
 
-let high = 155; 
-let ideal_weight = (55*9)/10;
-let maxi_weight = 55;
-let mini_weight = (55*8)/10;
+const high = 155; 
+const oddHigh = high - 100;
+let ideal_weight = (oddHigh*9)/10;
+let maxi_weight = oddHigh;
+let mini_weight = (oddHigh*8)/10;
 console.log( "Ideal weight = " + ideal_weight + "kg" + ", " + "Maximum weight = " + maxi_weight + "kg" +  ", " 
     + "Minimum weight = " + mini_weight +"kg" );

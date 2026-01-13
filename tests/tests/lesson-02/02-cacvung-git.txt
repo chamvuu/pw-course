@@ -21,12 +21,12 @@ file2, file3: vẫn ở vùng working directory
 
 e. Chạy lệnh: git commit -m”add file1”
 file1: được di chuyển sang vùng repository
-filefile2, file3: vẫn ở vùng working directory
+file2, file3: vẫn ở vùng working directory
 
 f. Chạy lệnh: git commit -m”add file”
 do không có file nào được thêm vào vùng staging, nên khi thực hiện lệnh commit trên các file không thay
 đổi vùng hiện tại.
 file1: vùng repository
-filefile2, file3: vùng working directory
+file2, file3: vùng working directory
 
 

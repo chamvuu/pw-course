@@ -7,11 +7,11 @@ iii. Nếu hằng số = 0: “Giá trị bạn nhập là số 0”*/
 
 /*----------------------------------*/
 
-const Number = 20.534534;
-if(Number > 0){
+const number = 20.534534;
+if(number > 0){
     console.log("Giá trị bạn nhập là số dương");
 }
-else if(Number <0){
+else if(number <0){
     console.log("Giá trị bạn nhập là số âm");
 }
 else
