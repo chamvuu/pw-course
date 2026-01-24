@@ -10,25 +10,12 @@
 
 //2. Viết hàm findMin nhận 3 tham số a, b, c, trả về giá trị nhỏ nhất. Gọi hàm và in kết quả với 2 bộ số khác nhau.
 function findMin( a, b, c ){
-    let min = a;
-    if(a < b && a < c ){
-        min = a; 
-        console.log(min);
-    }
-    else{
-        if (b < c){
-            min = b;
-            console.log(min);
-        }
-        else{
-             min = c;
-            console.log(min);
-        }
-    }
-}
+    let min = Math.min(a, b, c);
+    return min;
+ };
 
-findMin(4, 766, 7);
-findMin(1, 7, 1);
+console.log(findMin(66, 43, 7)); 
+console.log(findMin(645, 7, 8));
 
 /*3. Viết hàm getTopStudents nhận 2 tham số:
 ● students: mảng các object, mỗi object chứa name (tên) và score (điểm).
@@ -80,4 +67,4 @@ function calculateInterest( principal, rate, years){
 }; 
  
  let totalInterest = (calculateInterest( 1_000_000_000, 10, 5));
- console.log('Tổng số tiền là: '+ totalInterest);
+ console.log(`Tổng số tiền là: ${totalInterest}`);
