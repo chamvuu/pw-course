@@ -1,6 +1,6 @@
+
 Giả sử có 1 folder demo mới được tạo ra. Hãy liệt kê các file theo từng vùng sau khi thao tác
 các lệnh sau:
-
 a. Chạy lệnh git init
 - Local: 
 - Working directory: demo
