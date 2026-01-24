@@ -3,7 +3,10 @@ Giải thích các câu lệnh: git commit --amend, git commit --amend
 -m”<message>”, git restore --staged <file>, git reset HEAD~1.
 
 - git commit --amend: dùng để chỉnh sửa commit gần nhất, khi đó repository chỉ hiện duy nhất 1 commit mới và ghi đè lên commit cũ.
-- git commit --amend -m"<message>": dùng để chỉnh sửa commit gần nhất và đổi luôn tin nhắn của commit đó.
+
+- git commit --amend -m"<message>": dùng để cập nhật commit gần nhất và đổi luôn tin nhắn của commit đó.
+
 - git restore --staged <file>: để đưa file từ vùng staging về vùng working directory.
+
 - git reset HEAD~1: reset 1 commit về commit trước đó.
 ví dụ: có 2 commit: commit 1 và commit 2, sau khi dùng lệnh git reset HEAD~1 thì sẽ trở về commit 1, toàn bộ file trong commit 2 sẽ trở về vùng working directory. Và khi git log chỉ còn commit 1.   
