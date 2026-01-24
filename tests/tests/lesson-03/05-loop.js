@@ -10,12 +10,12 @@ for( let i = 1 ; i <= 100; i++){
 
 for( let j = 2 ; j <= 9 ; j++ )
 {
-    console.log("Bảng cửu chương " + j + " là: ");
+    console.log(`Bảng cửu chương ${j} là: `);
 
 let tich;
  for ( let i = 1 ; i <= 10 ; i++){
      tich = j * i ;
-     console.log (  j +' x ' + i + ' = ' + tich);
+     console.log (`${j} x ${i} =  ${tich}`);
  }
 
       console.log("----------------------");
@@ -24,11 +24,10 @@ let tich;
 // 3. Tạo một mảng chứa các số lẻ từ 1 đến 99.
 
 let array = [ ];
-for( let i = 0 ; i <= 99 ; i++){
-    if (i % 2 !== 0){
-        array.push(i);
-    }
+for( let i = 1 ; i <= 99 ; i+=2){
+        array.push(i);   
 }
+
 console.log(array);
 
 // 4. In ra 10 email dựa trên tên người dùng và số thứ tự (ví dụ:
@@ -60,7 +59,7 @@ const revenuePerMonth = [
 ];
 
 let totalRevenue = 0;
-for (i = 1; i < revenuePerMonth.length; i++){
+for (let i = 0; i < revenuePerMonth.length; i++){
     totalRevenue += revenuePerMonth[i].total;
 } 
 console.log(totalRevenue);
